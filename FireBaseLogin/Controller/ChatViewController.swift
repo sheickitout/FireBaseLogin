@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  ChatViewController.swift
 //  FireBaseLogin
 //
 //  Created by Sheick on 3/29/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class ChatViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

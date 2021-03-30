@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="8F4-lO-dOt">
             <objects>
-                <viewController id="gfE-7Q-Vzv" sceneMemberID="viewController">
+                <viewController id="gfE-7Q-Vzv" customClass="LoginViewController" customModule="FireBaseLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2rZ-QD-Dnz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,17 +91,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="Xj2-DA-r5B"/>
                     <connections>
-                        <segue destination="Hei-FU-TIv" kind="show" id="M91-kN-Wv5"/>
+                        <segue destination="Hei-FU-TIv" kind="show" identifier="loginToChat" id="M91-kN-Wv5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZCY-ez-fb2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1834.7826086956522" y="357.58928571428572"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="vYc-5c-keb">
             <objects>
-                <viewController id="Hei-FU-TIv" sceneMemberID="viewController">
+                <viewController id="Hei-FU-TIv" customClass="ChatViewController" customModule="FireBaseLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HBD-Pa-J3v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,6 +139,9 @@
                                         <rect key="frame" x="0.0" y="516" width="414" height="258"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Register"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="3rM-TG-MLc" eventType="touchUpInside" id="QPa-Co-7PM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -154,7 +157,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="2fD-An-Hhd"/>
                     <connections>
-                        <segue destination="Hei-FU-TIv" kind="show" id="mhf-Zr-WYc"/>
+                        <outlet property="emailTextField" destination="hpY-7o-qKe" id="CF7-xN-zJ8"/>
+                        <outlet property="passwordTextField" destination="jt2-iR-U3B" id="1sS-iu-5uO"/>
+                        <segue destination="Hei-FU-TIv" kind="show" identifier="registerToChat" id="mhf-Zr-WYc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0L-Am-Z7j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
