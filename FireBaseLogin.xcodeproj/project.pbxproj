@@ -18,6 +18,8 @@
 		889BA5C22612AB8B00F6EC7C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BA5C12612AB8B00F6EC7C /* RegisterViewController.swift */; };
 		889BA5C52612B53E00F6EC7C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BA5C42612B53E00F6EC7C /* LoginViewController.swift */; };
 		889BA5CB2612B6D700F6EC7C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BA5CA2612B6D700F6EC7C /* ChatViewController.swift */; };
+		889BA5D626138B5B00F6EC7C /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889BA5D526138B5B00F6EC7C /* K.swift */; };
+		88A3C6EC2616285400309AC9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A3C6EB2616285400309AC9 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		889BA5C12612AB8B00F6EC7C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		889BA5C42612B53E00F6EC7C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		889BA5CA2612B6D700F6EC7C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		889BA5D526138B5B00F6EC7C /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = K.swift; path = ../K.swift; sourceTree = "<group>"; };
+		88A3C6EB2616285400309AC9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8E104C2AEBF6023513E45459 /* Pods_FireBaseLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBaseLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F38B17BDE274CB9C1B7EA7 /* Pods-FireBaseLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseLogin.release.xcconfig"; path = "Target Support Files/Pods-FireBaseLogin/Pods-FireBaseLogin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +84,7 @@
 		885FA3FD260A519C001D0C1F /* FireBaseLogin */ = {
 			isa = PBXGroup;
 			children = (
+				889BA5D32613893900F6EC7C /* Model */,
 				889BA5C82612B5EA00F6EC7C /* View */,
 				889BA5C72612B54600F6EC7C /* Controller */,
 				885FA3FE260A519C001D0C1F /* AppDelegate.swift */,
@@ -109,6 +114,15 @@
 				885FA404260A519C001D0C1F /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		889BA5D32613893900F6EC7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				889BA5D526138B5B00F6EC7C /* K.swift */,
+				88A3C6EB2616285400309AC9 /* Message.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8AEC1D4FA837FE3326B4D96C /* Frameworks */ = {
@@ -238,6 +252,8 @@
 				885FA3FF260A519C001D0C1F /* AppDelegate.swift in Sources */,
 				885FA401260A519C001D0C1F /* SceneDelegate.swift in Sources */,
 				889BA5C52612B53E00F6EC7C /* LoginViewController.swift in Sources */,
+				889BA5D626138B5B00F6EC7C /* K.swift in Sources */,
+				88A3C6EC2616285400309AC9 /* Message.swift in Sources */,
 				889BA5CB2612B6D700F6EC7C /* ChatViewController.swift in Sources */,
 				889BA5C22612AB8B00F6EC7C /* RegisterViewController.swift in Sources */,
 			);
